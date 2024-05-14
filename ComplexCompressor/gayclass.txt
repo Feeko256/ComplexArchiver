@@ -1,0 +1,292 @@
+﻿       List<StackPanel> files = new List<StackPanel>();
+        List<string> filePaths = new List<string>();
+
+        List<StackPanel> compresedFiles = new List<StackPanel>();
+        List<string> compressedFilePaths = new List<string>();
+
+        int windowSize = 0;
+        int bufferSize = 0;
+
+
+        private void OpenButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            // Устанавливаем фильтр для txt и jpeg файлов
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|JPEG files (*.jpeg;*.jpg)|*.jpeg;*.jpg";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+
+
+                if (!filePaths.Contains(openFileDialog.FileName))
+                {
+                    FileDetailsPanel.Children.Clear();
+                    filePaths.Add(openFileDialog.FileName);
+                    FileDetailsPanel.Children.Add(DisplayFile(openFileDialog.FileName, "", ""));
+                }
+
+                else
+                {
+                    MessageBox.Show("Файл уже существует в списке.", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+            }
+        }
+
+        private StackPanel DisplayFile(string filePath, string compresionSpeed, string compressionType)
+        {
+            StackPanel file = new StackPanel
+            {
+                Orientation = Orientation.Horizontal
+
+            };
+            System.Windows.Controls.Image fileIcon = new System.Windows.Controls.Image
+            {
+                Width = 40,
+                Height = 40,
+                Margin = new Thickness(5),
+                Source = GetIcon(filePath)
+            };
+            TextBlock fileName = new TextBlock
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Text = System.IO.Path.GetFileName(filePath),
+                Margin = new Thickness(5)
+            };
+            TextBlock fileSize = new TextBlock
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Text = GetFileSize(filePath),
+                Margin = new Thickness(5)
+            };
+            TextBlock compSpeed = new TextBlock
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Text = compresionSpeed,
+                Margin = new Thickness(5)
+            };
+            TextBlock compType = new TextBlock
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Text = compressionType,
+                Margin = new Thickness(5)
+            };
+            file.Children.Add(fileIcon);
+            file.Children.Add(fileName);
+            file.Children.Add(fileSize);
+            file.Children.Add(compSpeed);
+            file.Children.Add(compType);
+            //  compresedFiles.Add(file);
+
+            return file;
+            /*compressedFileDetailsPanel.Children.Clear();
+            foreach (var a in compresedFiles)
+            {
+                compressedFileDetailsPanel.Children.Add(a);
+            }*/
+
+        }
+
+        private ImageSource GetIcon(string filePath)
+        {
+            using (System.Drawing.Icon sysicon = System.Drawing.Icon.ExtractAssociatedIcon(filePath))
+            {
+                return Imaging.CreateBitmapSourceFromHIcon(
+                        sysicon.Handle,
+                        Int32Rect.Empty,
+                        BitmapSizeOptions.FromEmptyOptions());
+            }
+        }
+        private string GetFileSize(string filePath)
+        {
+            FileInfo fileInfo = new FileInfo(filePath);
+            long sizeInBytes = fileInfo.Length;
+            return FormatFileSize(sizeInBytes);
+        }
+
+        private string FormatFileSize(long size)
+        {
+            // Преобразование размера файла из байтов в подходящий формат для отображения
+            string[] sizes = { "B", "KB", "MB", "GB", "TB" };
+            double len = size;
+            int order = 0;
+            while (len >= 1024 && order < sizes.Length - 1)
+            {
+                order++;
+                len = len / 1024;
+            }
+
+            // Форматирование строки с размером файла
+            return String.Format("{0:0.##} {1}", len, sizes[order]);
+        }
+
+        private void compressButton_Click(object sender, RoutedEventArgs e)
+        {
+            string time = "";
+            string type = "";
+            int algorythmIndex = AlgorythmChooser.SelectedIndex;
+            switch (algorythmIndex)
+            {
+                case 0:
+                    foreach (var path in filePaths)
+                    {
+                        LZ77 lz77 = new LZ77();
+                        Stopwatch sw = Stopwatch.StartNew();
+                        string text = File.ReadAllText(path);
+                        var compressed = lz77.Compress(text, windowSize, bufferSize);
+                        sw.Stop();
+                        string directoryPath = System.IO.Path.GetDirectoryName(path);
+                        string outputPath = directoryPath + $"\\Compresed_{System.IO.Path.GetFileNameWithoutExtension(path)}.lz77sndrt";
+                        binarySave(lz77, outputPath);
+                        time = sw.ElapsedMilliseconds + "ms";
+                        type = "Standart";
+                        compressedFileDetailsPanel.Children.Add(DisplayFile(outputPath, time, type));
+                        /*if (!compressedFilePaths.Contains(outputPath))
+                        {
+                            compressedFileDetailsPanel.Children.Add(DispleyCompressedFile(outputPath, time, type));
+                            compressedFilePaths.Add(outputPath);
+                        }
+                        else
+                        {
+                            compressedFilePaths.Remove(outputPath);
+                            compressedFilePaths.Add(outputPath);
+                        }*/
+
+                    }
+
+                    break;
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+                    foreach (var path in filePaths)
+                    {
+                        LZ77_complex lz77_complex = new LZ77_complex();
+                        Stopwatch sw = Stopwatch.StartNew();
+                        string text = File.ReadAllText(path);
+                        var compressed = lz77_complex.Compress(text, windowSize, bufferSize);
+                        sw.Stop();
+                        string directoryPath = System.IO.Path.GetDirectoryName(path);
+                        string outputPath = directoryPath + $"\\Compresed_{System.IO.Path.GetFileNameWithoutExtension(path)}.lz77CN";
+                        binarySave_complex(lz77_complex, outputPath);
+                        time = sw.ElapsedMilliseconds + "ms";
+                        type = "LZ77 Complex";
+                        compressedFileDetailsPanel.Children.Add(DisplayFile(outputPath, time, type));
+
+                    }
+                    break;
+                case 4:
+
+                    break;
+            }
+            /* compressedFileDetailsPanel.Children.Clear();
+
+             foreach (var a in compressedFilePaths)
+             {
+                 DispleyCompressedFile(a, time, type);
+             }*/
+        }
+
+        private void binarySave(LZ77 data, string outputPath)
+        {
+            using (FileStream fs = new FileStream(outputPath, FileMode.Create))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(fs, data);
+            }
+
+
+        }
+        private void binarySave_complex(LZ77_complex data, string outputPath)
+        {
+            using (FileStream fs = new FileStream(outputPath, FileMode.Create))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(fs, data);
+            }
+
+
+        }
+        private void windowValue_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            windowSize = (int)windowValue.Value;
+            windowLable.Content = $"Window size: {windowSize}";
+        }
+
+        private void bufferValue_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            bufferSize = (int)bufferValue.Value;
+            bufferLabel.Content = $"Buffer size: {bufferSize}";
+        }
+
+        private void openForDecompression_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "LZ77 Files (*.lz77sndrt;*.lz77CN)|*.lz77sndrt;*.lz77CN",
+                Title = "Open LZ77 File"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+
+                using (FileStream fs = new FileStream(openFileDialog.FileName, FileMode.Open))
+                {
+                    string extension = System.IO.Path.GetExtension(openFileDialog.FileName);
+                    switch (extension)
+                    {
+                        case ".lz77sndrt":
+                            if (!compressedFilePaths.Contains(openFileDialog.FileName))
+                            {
+                                compressedFilePaths.Add(openFileDialog.FileName);
+                                BinaryFormatter formatter = new BinaryFormatter();
+                                LZ77 lz77 = (LZ77)formatter.Deserialize(fs);  // Корректная десериализация в объект LZ77
+                                FileDetailsPanelcompressed.Children.Add(DisplayFile(openFileDialog.FileName, "", "lz77 standart"));
+
+                                string directoryPath = System.IO.Path.GetDirectoryName(openFileDialog.FileName);
+                                string outputPath = directoryPath + $"\\Decompresed_{System.IO.Path.GetFileNameWithoutExtension(openFileDialog.FileName)}.txt";
+
+                                Stopwatch sw = Stopwatch.StartNew();
+                                string decompressed = lz77.Decompress(lz77.compressed);
+                                sw.Stop();
+                                File.WriteAllText(outputPath, decompressed);
+                                decompressedFileDetailsPanel.Children.Add(DisplayFile(outputPath, sw.ElapsedMilliseconds + " ms", "lz77 standart"));
+                            }
+
+                            break;
+
+                        case ".lz77CN":
+                            if (!compressedFilePaths.Contains(openFileDialog.FileName))
+                            {
+                                compressedFilePaths.Add(openFileDialog.FileName);
+                                BinaryFormatter formatter = new BinaryFormatter();
+                                LZ77_complex lz77 = (LZ77_complex)formatter.Deserialize(fs);  // Корректная десериализация в объект LZ77
+                                FileDetailsPanelcompressed.Children.Add(DisplayFile(openFileDialog.FileName, "", "lz77 complex"));
+
+                                string directoryPath = System.IO.Path.GetDirectoryName(openFileDialog.FileName);
+                                string outputPath = directoryPath + $"\\Decompresed_Complex_{System.IO.Path.GetFileNameWithoutExtension(openFileDialog.FileName)}.txt";
+
+                                Stopwatch sw = Stopwatch.StartNew();
+                                string decompressed = lz77.Decompress(lz77.Compressed);
+                                sw.Stop();
+                                File.WriteAllText(outputPath, decompressed);
+                                decompressedFileDetailsPanel.Children.Add(DisplayFile(outputPath, sw.ElapsedMilliseconds + " ms", "lz77 complex"));
+                            }
+
+                            break;
+                    }
+
+
+
+                }
+                Console.WriteLine("File successfully opened and data loaded.");
+
+            }
+            else
+            {
+                Console.WriteLine("No file selected.");
+            }
+        }

@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\algorythms\\lz78_complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\algorythms\\lz78_complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\algorythms\\lz77_complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\algorythms\\lz77_complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\algorythms\\lzw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\algorythms\\lzw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\algorythms\\lz78.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\algorythms\\lz78.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\algorythms\\lz77.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\algorythms\\lz77.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|d:\\yandexdisk\\yandexdisk\\6 \u043A\u0443\u0440\u0441\\\u0434\u0438\u043F\u043B\u043E\u043C\\complexcompressor\\complexcompressor\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA2F4A5F-DF46-46DB-8AB6-39017D15CD7D}|ComplexCompressor\\ComplexCompressor.csproj|solutionrelative:complexcompressor\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ComplexCompressor\\View\\MainWindow.xaml",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\View\\MainWindow.xaml",
+              "RelativeToolTip": "ComplexCompressor\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T15:41:19.782Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "ComplexCompressor\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AQIAAJUBAAAAAAAAAAAYwKwCAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:33:32.199Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LZW.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZW.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\Algorythms\\LZW.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZW.cs",
+              "RelativeToolTip": "ComplexCompressor\\Algorythms\\LZW.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAA3wBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T13:36:16.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LZ78_Complex.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ78_Complex.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\Algorythms\\LZ78_Complex.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ78_Complex.cs",
+              "RelativeToolTip": "ComplexCompressor\\Algorythms\\LZ78_Complex.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAIwB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T13:01:49.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\View\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ComplexCompressor\\View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:16:27.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LZ78.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ78.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\Algorythms\\LZ78.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ78.cs",
+              "RelativeToolTip": "ComplexCompressor\\Algorythms\\LZ78.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAIwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:16:23.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LZ77.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ77.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\Algorythms\\LZ77.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ77.cs",
+              "RelativeToolTip": "ComplexCompressor\\Algorythms\\LZ77.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:54:42.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LZ77_Complex.cs",
+              "DocumentMoniker": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ77_Complex.cs",
+              "RelativeDocumentMoniker": "ComplexCompressor\\Algorythms\\LZ77_Complex.cs",
+              "ToolTip": "D:\\YandexDisk\\YandexDisk\\6 \u043A\u0443\u0440\u0441\\\u0414\u0418\u041F\u041B\u041E\u041C\\ComplexCompressor\\ComplexCompressor\\Algorythms\\LZ77_Complex.cs",
+              "RelativeToolTip": "ComplexCompressor\\Algorythms\\LZ77_Complex.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAUwJAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:53:27.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oK+42o53LtC1N95XyvEmKjSPefCXRcVL9Ng3wg6+uT3NdM9TA4KftHqJNT6FwaUfL/FZ5JIorCBVMoGkjdsn/A==",
+  "success": true,
+  "projectFilePath": "D:\\YandexDisk\\YandexDisk\\6 курс\\ДИПЛОМ\\ComplexCompressor\\ComplexCompressor\\ComplexCompressor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\feeko\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\feeko\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
